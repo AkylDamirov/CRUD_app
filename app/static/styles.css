@@ -1,6 +1,12 @@
 body {
     background-color: #f7fafc;
     font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
 }
 
 h1 {
@@ -48,16 +54,16 @@ a {
     margin-top: 5rem;
 }
 
-.w-1/2 {
-    width: 50%;
+.w-full {
+    width: 100%;
 }
 
 .flex {
     display: flex;
 }
 
-.flex-row {
-    flex-direction: row;
+.flex-col {
+    flex-direction: column;
 }
 
 .justify-between {
@@ -126,6 +132,7 @@ li a:hover {
     text-decoration: underline;
 }
 
+/* Button Styles */
 .button {
     display: inline-block;
     background-color: #3b82f6; /* Blue color */
@@ -142,4 +149,12 @@ li a:hover {
 
 .button:hover {
     background-color: #2563eb; /* Darker blue on hover */
+}
+
+/* Container Styles */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
