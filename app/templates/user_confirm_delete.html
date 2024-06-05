@@ -1,0 +1,13 @@
+{% extends "layouts.html" %}
+{% block title %}
+Users List
+{% endblock %}
+{% block content %}
+<!-- crud_app/templates/user_confirm_delete.html -->
+<h1>Confirm Delete User</h1>
+<p>Are you sure you want to delete {{ user.name }}?</p>
+<form method="post">
+  {% csrf_token %}
+  <button type="submit">Confirm</button>
+</form>
+{% endblock %}
