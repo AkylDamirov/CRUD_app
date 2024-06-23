@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-h+r05!&g+4%^xvyg80i(z-&4me++lke69rebk-_^e7yi++h8i&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -76,8 +76,12 @@ WSGI_APPLICATION = "CRUD_app.wsgi.application"
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+        "ENGINE": "django.db.backends.postgresql_psycopg2",
+        "NAME": 'project_database',
+        'USER':'test_user',
+        'PASSWORD':'password',
+        'HOST':'db',
+        'PORT':'5432'
     }
 }
 
